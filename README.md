@@ -1,37 +1,34 @@
 # Blog-Notifier
 
-Blog-Notifier is a project developed for the GoLang track on [Hyperskill](https://hyperskill.org), a hands-on learning platform.
-It simplifies the management of favorite blog sites by providing email notifications whenever a new blog post is published on any blog in the user's watchlist. Users can easily add or remove blog sites from their watchlists.
+Blog-Notifier is a command-line tool built for the Go track on [Hyperskill](https://hyperskill.org). It helps users keep track of their favorite blogs by sending an email notification whenever a new post is published. Users can add or remove blogs from their personal watchlist.
 
 ## Project Description
 
-The project is divided into five stages, each adding new functionalities and enhancing the user experience:
+The project is built in five stages, with each stage adding new functionality:
 
-### Stage 1
-Involves creating a Command Line Interface (CLI) with the key functionality of parsing YAML files. This allows the Blog Notifier CLI to dynamically read and apply configurations for email notifications, server settings, and integration with messaging platforms like Telegram.
+### Stage 1 - Config File Support
+Set up a basic CLI that can read configuration settings from a YAML file. This allows the Blog Notifier to load email and server settings dynamically, so the app can be configured without changing the code.
 
-### Stage 2
-Enhances the Blog Notifier CLI to create a watchlist for favorite blogs and store that list in a SQLite database, enabling easier management and persistence of the watchlist.
+### Stage 2 – Manage Blog Watchlist
+Add functionality to let users create and manage a watchlist of their favorite blogs. Users should be able to add, update, or remove blog sites from the list using the CLI.
 
-### Stage 3
-Introduces a CLI sub-command to crawl a website recursively to a specified depth, collecting links and presenting them in a user-friendly manner.
+### Stage 3 – Website Crawler
+Add functionality to recursively crawl a blog website up to a specified depth. The CLI should collect all discovered links and display them in a clear, user-friendly format.
 
-### Stage 4
-Implements functionality to monitor specific blog sites for new content updates. Users can manage their list of blogs, check for new posts, and update their watchlist as needed.
+### Stage 4 – Monitor Blogs for Updates
+Add functionality to crawl all blogs in the watchlist and check for new posts. The CLI should update the local database with any new entries it finds, so that the watchlist up to date with the latest content.
 
-### Stage 5
-Introduces email notification functionality, sending notifications to users for new blog posts discovered on sites in their watchlist.
+### Stage 5 – Email Notifications
+Add functionality to notify users by email when new blog posts are found on sites in their watchlist. This completes the core functionality of the Blog Notifier by keeping users updated in real time.
 
 ## Learning Outcomes
 
-Working on this project offers valuable opportunities to master diverse skills in GoLang, including:
-- Parsing YAML files
-- Website crawling
-- Sending emails
-- Implementing concurrency
-- Executing CRUD (Create, Read, Update, Delete) operations
+Working on this project offers valuable hands-on experience with a range of essential Go skills, including:
+- Parsing and working with YAML configuration files.
+- Building a recursive website crawler.
+- Sending emails programmatically.
+- Using Go’s concurrency features effectively.
+- Performing CRUD (Create, Read, Update, Delete) operations on data.
 
 ## Feedback and Contributions
-Blog-Notifier is currently in the Beta stage, and your feedback is invaluable to us. We would highly appreciate it if you could check out the project [here](https://hyperskill.org/projects/437) and share your thoughts. 
-
-Contributions are also highly appreciated! If you would like to contribute to the project, please feel free to submit any suggestions or pull requests to help improve this project.
+Blog Notifier is in active development. Feedback, suggestions, and pull requests are welcome. Feel free to check out the project [here](https://hyperskill.org/projects/437) and contribute to its improvement.
